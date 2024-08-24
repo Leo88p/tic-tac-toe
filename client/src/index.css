@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(152, 154, 58, 0.188);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+table {
+  border-collapse: collapse;
+}
+.gameTd {
+  padding: 0;
+  border: 2px solid black;
+  width: 150px;
+  height: 150px;
+}
+.game p {
+  font-size: 20px;
+}
+.field {
+  width: 100%;
+  height: 100%;
+  background-color: #dca014;
+  border: 0;
+  font-size:60px;
+  font-weight: bold;
+  padding: 5px;
+}
+.field:disabled {
+  color: black;
+  background-color: #ff5e00;
+}
+
+.winningField {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(229, 241, 4);
+  border: 0;
+  font-size: 60px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.winningField:disabled {
+  color: black;
+}
+
+.main {
+  display: flex;
+}
+
+.game {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px;
+}
+
+.column {
+  display: flex;
+  flex-grow: 1;
+  margin-top: 30px;
+}
+
+.column-right {
+  display: flex;
+  flex-grow: 1.5;
+  font-size: 25px;
+  line-height: 300%;
+  padding-left: 60px;
+  border: 2px solid black;
+  margin-left: 30px;
+  height: 454px;
+  background-color: white;
+}
+
+.column table {
+  width: 300px;
+  height: 458px;
+  border: 2px solid;
+  padding: -100px;
+  background-color: white;
+  display: block;
+}
+.column td {
+  padding: 0;
+  border: 2px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 300px;
+  height: 49px;
+} 
+
+.column button {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+.column button:disabled {
+  font-weight: bold;
+  color: black;
+  background-color: rgba(106, 255, 0, 0.418) 
+}
